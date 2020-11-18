@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------
+ [Master Stylesheet]
+
+  Project:	Star Admin Bootstrap Template [Pro Version]
+  Version:	1.0
+-------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------*/
+/* === Import Bootstrap functions and variables === */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+/*-------------------------------------------------------------------*/
+/* === Import template variables === */
+@import "variables";
+
+/*-------------------------------------------------------------------*/
+/* === SCSS Compass Functions === */
+@import "../../../node_modules/compass-mixins/lib/compass";
+@import "../../../node_modules/compass-mixins/lib/animate";
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+
+@import "../../../node_modules/vue2-datepicker/scss/index";
+
+/*-------------------------------------------------------------------*/
+/* === Template mixins === */
+@import "mixins/animation";
+@import "mixins/background";
+@import "mixins/badges";
+@import "mixins/blockqoute";
+@import "mixins/breadcrumbs";
+@import "mixins/buttons";
+@import "mixins/cards";
+@import "mixins/misc";
+@import "mixins/text";
+
+/*-------------------------------------------------------------------*/
+/* === Core Styles === */
+@import "reset";
+@import "fonts";
+@import "functions";
+@import "sidebar";
+@import "navbar";
+@import "typography";
+@import "misc";
+@import "footer";
+@import "utilities";
+@import "background";
+@import "demo";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+@import "components/badges";
+@import "components/breadcrumbs";
+@import "components/bootstrap-progress";
+@import "components/buttons";
+@import "components/cards";
+@import "components/checkbox-radio";
+@import "components/dropdown";
+@import "components/forms";
+@import "components/icons";
+@import "components/preview";
+@import "components/tables";
+@import "components/todo-list";
+@import "components/lists";
+@import "components/loaders/loaders";
+@import "components/nav";
+@import "components/dashboard";
+
+/*-------------------------------------------------------------------*/
+/* === Plugin override === */
+@import "components/plugin-overrides/chartist"; 
+@import "components/plugin-overrides/datepicker";
+
+/*-------------------------------------------------------------------*/
+/* === Landing screens === */
+@import "landing-screens/auth";
+@import "landing-screens/error";
+
+
+@import "layout";
+@import "animation";
+
+
+

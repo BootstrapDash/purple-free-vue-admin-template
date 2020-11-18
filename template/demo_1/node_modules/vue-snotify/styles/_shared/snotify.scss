@@ -1,0 +1,65 @@
+$snotify-backdrop-color: #000 !default;
+$snotify-width: 300px !default;
+$snotify-offset: 10px !default;
+
+.snotify {
+  display: block;
+  position: fixed;
+  width: $snotify-width;
+  z-index: 9999;
+  box-sizing: border-box;
+  pointer-events: none;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.snotify-leftTop,
+.snotify-leftCenter,
+.snotify-leftBottom {
+  left: $snotify-offset;
+}
+
+.snotify-rightTop,
+.snotify-rightCenter,
+.snotify-rightBottom {
+  right: $snotify-offset;
+}
+
+.snotify-centerTop,
+.snotify-centerCenter,
+.snotify-centerBottom {
+  left: calc(50% - #{$snotify-width} / 2);
+}
+
+.snotify-leftTop,
+.snotify-centerTop,
+.snotify-rightTop {
+  top: $snotify-offset;
+}
+
+.snotify-leftCenter,
+.snotify-rightCenter,
+.snotify-centerCenter {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.snotify-leftBottom,
+.snotify-rightBottom,
+.snotify-centerBottom {
+  bottom: $snotify-offset;
+}
+
+.snotify-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $snotify-backdrop-color;
+  opacity: 0;
+  z-index: 9998;
+  transition: opacity .3s;
+}

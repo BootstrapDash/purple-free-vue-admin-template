@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+ * blueimp Gallery CSS
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .close,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  color: $white !important
+}

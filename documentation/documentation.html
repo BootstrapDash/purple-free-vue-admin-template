@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/theme/dracula.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid documentation">
+    <div class="row">
+      <div class="col-md-3 col-xl-2 left-sidebar"> 
+        <div class="logo-wrapper">
+            <img src="logo.svg" alt="logo">
+        </div>
+        <h5 class="left-menu-title">Documentation</h5>
+        <ul class="left-menu">
+            <li><a href="#introduction"> Introduction </a></li>
+            <li><a href="#fileStructure"> File Structure </a></li>
+        </ul>
+        <h6 class="left-menu-title">Installation</h6>
+        <ul class="left-menu">
+            <li><a href="#setupEnvironment"> Setup Environment </a></li>
+            <li><a href="#templateInstallation"> Template Installation </a></li>
+        </ul>
+        <h6 class="left-menu-title">Deployment</h6>
+        <ul class="left-menu">
+            <li><a href="#deployment"> Deploy Vuejs App </a></li>
+        </ul>
+        <h6 class="left-menu-title">Basic Structure</h6>
+        <ul class="left-menu">
+            <li><a href="#layout"> Layout </a></li>
+            <li><a href="#navbar"> Header </a></li>
+            <li><a href="#leftSidebar"> Sidebar </a></li>
+            <li><a href="#footer"> Footer </a></li>
+        </ul>
+        <h6 class="left-menu-title">Other Information</h6>
+        <ul class="left-menu">
+            <li><a href="#customerSupport"> Customer Support </a></li>
+        </ul>
+      </div>
+      <div class="col-md-9 col-xl-10 main-panel bg-white">
+        <div class="main-panel-wrapper">
+            <h2 class="mt-2 text-center font-weight-light text-muted text-uppercase mb-4">Documentation</h2>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3 id="introduction" class="mb-4">Introduction</h3>
+                <p>Purple Vue Admin is a responsive Vuejs template that is based on the CSS framework Bootstrap 4 and it is built with Sass. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Sass, visit their
+                    website and read through the documentation. All of Bootstrap components have been modified to fit the style of Purple Vue Admin and provide a consistent look throughout the template.</p>
+                <p>Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can
+                    be really helpful when you need to create something on the fly.</p>
+                </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3 id="fileStructure" class="mb-4">File Structure</h3>
+                <p>Once you have download the package you will see the following folder structure inside the folder.</p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+Purple-free-vue/
+  ├── template
+    ├── demo_1
+      ├── public/
+      ├── src/
+          ├── assets/
+          ├── components/
+          ├── layout/
+          ├── pages/
+          ├── router/
+          ├── index.html
+          ├── App.vue
+          ├── main.js
+      ├── babel.config.js
+      ├── package.json
+      ├── README.md
+      ├── CHANGELOG.md
+      ├── .gitignore
+  ├── CHANGELOG.md
+  ├── documentation
+
+                </textarea>
+              </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3>Installation</h3>
+                <h4 id="setupEnvironment" class="pt-4">Set up the Development Environment</h4>
+                <p>Install <a href="https://nodejs.org/en/" target="_blank">Node.js and npm</a> if they are not already on your machine.</p>
+                <p>Vue CLI is a command line interface for the latest Vue. Install it before start with the Vuejs app.</p>
+                <textarea rows="4" cols="50" class="code-non-editable"> npm install --global @vue/cli </textarea>
+                <div class="alert alert-warning">
+                    <p>If you have Vue CLI installed previously, update it to the latest Vue CLI. Remove the older version and re-install it.</p>
+                    <textarea rows="4" cols="50" class="code-non-editable">npm uninstall --global @vue/cli</textarea>
+                    <textarea rows="4" cols="50" class="code-non-editable">npm install --global @vue/cli@latest</textarea>   
+                </div>
+                <h4 id="templateInstallation" class="pt-4">Template Installation</h4>
+                <p>Go to the project directory and install the Vuejs local project dependencies.</p>
+                <p>Run <code>npm install</code>. This command install the dependencies in the local <code>node_modules</code> folder.
+                    By default, <code>npm install</code> will install all modules listed as dependencies in <code>package.json</code>.</p>
+                <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea>   
+                <textarea rows="4" cols="50" class="code-non-editable">npm run serve</textarea>                   
+                <p>The <code>npm run serve</code> command launches the server, watches your files, and rebuilds the app as you make changes to those files.
+                    Using the <code>--open</code> (or just <code>-o</code>) option will automatically open your browser on <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a>.</p>
+                <p>For more detailed information to install the Vuejs application, visit this official Vuejs <a href="https://vuejs.org/" target="_blank">documentation website</a>.</p>
+              </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3 id="deployment">Deployment</h3>
+                <h4 class="pt-4">Deploy Vuejs app </h4>
+                <p>For the simplest deployment, create a production build and copy the output directory to a web server.</p>
+                <p>1. Start with the production build:</p>
+                <textarea rows="4" cols="50" class="code-non-editable">npm run build</textarea>   
+                <p>2. Copy everything within the output folder (dist/) to a folder on the server.</p>
+              </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3>Basic Structure</h3>
+                <h4 class="pt-4" id="layout">Layout</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<template>
+  <section class="main-view">
+    <div class="container-scroller">
+      <Header/>
+      <div class="container-fluid page-body-wrapper">
+        <Sidebar/>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <router-view></router-view>
+          </div> <!-- content wrapper ends -->
+          <Footer/>
+        </div> <!-- main panel ends -->
+      </div> <!-- page-body-wrapper ends -->
+    </div>
+  </section>
+</template>
+
+<script>
+  import Header from "./partials/Header";
+  import Sidebar from "./partials/Sidebar";
+  import Footer from "./partials/Footer";
+  export default {
+    name: "layout",
+    components: {
+      Header,
+      Sidebar,
+      Footer
+    }
+  }
+</script>
+
+                </textarea>
+                <h4 class="pt-4" id="navbar">Header</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<template>
+  <section class="app-sidebar">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item nav-profile">
+          <a href="javascript:void(0);" class="nav-link">
+            <div class="nav-profile-image">
+              <img src="@/assets/images/faces/face1.jpg" alt="profile">
+              <span class="login-status online"></span>
+            </div>
+            <div class="nav-profile-text d-flex flex-column">
+              <span class="font-weight-bold mb-2">David Grey. H</span>
+              <span class="text-secondary text-small">Project Manager</span>
+            </div>
+            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+          </a>
+        </li>
+        <li class="nav-item" v-on:click="collapseAll">
+          <router-link class="nav-link" to="/">
+            <span class="menu-title">Dashboard</span>
+            <i class="mdi mdi-home menu-icon"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'ui-basic'">
+            <span class="menu-title">Basic UI Elements</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/buttons/">Buttons</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/dropdowns/">Dropdowns</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/typography/">Typography</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'charts-dropdown'">
+            <span class="menu-title">Charts</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-chart-bar menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="charts-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/charts/chartjs/">Chart js</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'table-dropdown'">
+            <span class="menu-title">Tables</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-table-large menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="table-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/tables/basic-tables/">Basic Table</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'user-page-dropdown'">
+            <span class="menu-title">User Pages</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-lock menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="user-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" target="_blank" to="/auth-pages/login/">Login</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" target="_blank" to="/auth-pages/register/">Register</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'error-page-dropdown'">
+            <span class="menu-title">Error pages</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-security menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="error-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" target="_blank" to="/error-pages/error-404/">404</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" target="_blank" to="/error-pages/error-500/">500</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'icons-dropdown'">
+            <span class="menu-title">Icons</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-contacts menu-icon"></i>
+          </span>
+          <b-collapse accordion="sidebar-accordion" id="icons-dropdown">
+            <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                <router-link class="nav-link" to="/icons/mdi-icons/">MDI</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://www.bootstrapdash.com/demo/purple-free-vue/documentation/documentation.html">
+            <span class="menu-title">Documentation</span>
+            <i class="menu-icon mdi mdi-file-document-outline"></i>
+          </a>
+        </li>
+        <li class="nav-item sidebar-actions">
+          <span class="nav-link">
+            <div class="border-bottom">
+              <h6 class="font-weight-normal mb-3">Projects</h6>
+            </div>
+            <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
+            <div class="mt-4">
+              <div class="border-bottom">
+                <p class="text-secondary">Categories</p>
+              </div>
+              <ul class="gradient-bullet-list mt-4">
+                <li>Free</li>
+                <li>Pro</li>
+              </ul>
+            </div>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'sidebar',
+  data () {
+    return {
+      collapses: [ 
+      { show: false },
+      { show: false },
+      { show: false }
+    ]
+    }
+  },
+  methods: {
+    collapseAll() {
+      var exp_elm = document.getElementsByClassName("show");
+      if (exp_elm.length > 0) {
+        var elm_id = exp_elm[0].id;
+        this.$root.$emit("bv::toggle::collapse", elm_id);
+      }
+    }
+  },
+  mounted () {
+    const body = document.querySelector('body')
+    // add class 'hover-open' to sidebar navitem while hover in sidebar-icon-only menu
+    document.querySelectorAll('.sidebar .nav-item').forEach(function (el) {
+      el.addEventListener('mouseover', function () {
+        if (body.classList.contains('sidebar-icon-only')) {
+          el.classList.add('hover-open')
+        }
+      })
+      el.addEventListener('mouseout', function () {
+        if (body.classList.contains('sidebar-icon-only')) {
+          el.classList.remove('hover-open')
+        }
+      })
+    })
+  },
+  watch:{
+    $route () {
+        document.querySelector('#sidebar').classList.toggle('active');
+    }
+  } 
+}
+</script>
+                  
+                </textarea>
+                <h4 class="pt-4" id="leftSidebar">Sidebar</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<template>
+  <section class="app-sidebar">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item nav-profile">
+          <a href="#" class="nav-link">
+            <div class="nav-profile-image">
+              <img src="@/assets/images/faces/face1.jpg" alt="profile">
+              <span class="login-status online"></span>
+            </div>
+            <div class="nav-profile-text d-flex flex-column">
+              <span class="font-weight-bold mb-2">David Grey. H</span>
+              <span class="text-secondary text-small">Project Manager</span>
+            </div>
+            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">
+            <span class="menu-title">Dashboard</span>
+            <i class="mdi mdi-home menu-icon"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'ui-basic'">
+            <span class="menu-title">Basic UI Elements</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+          </span>
+          <b-collapse id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/accordions/">Accordion</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/alerts/">Alerts</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/badges/">Badges</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/breadcrumbs/">Breadcrumbs</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/buttons/">Buttons</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/dropdowns/">Dropdowns</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/modals/">Modals</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/paginations/">Paginations</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/progress/">Progress</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/tabs/">Tabs</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/tooltips/">Tooltips & Popovers</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/basic-ui/typography/">Typography</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'ui-advanced'">
+            <span class="menu-title">Advanced UI</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-cards-variant menu-icon"></i>
+          </span>
+          <b-collapse id="ui-advanced">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/advanced-ui/carousel/">Carousel</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/advanced-ui/loaders/">Loaders</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'charts-dropdown'">
+            <span class="menu-title">Charts</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-chart-bar menu-icon"></i>
+          </span>
+          <b-collapse id="charts-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/charts/chartjs/">Chart js</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'table-dropdown'">
+            <span class="menu-title">Tables</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-table-large menu-icon"></i>
+          </span>
+          <b-collapse id="table-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/tables/basic-tables/">Basic Table</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'user-page-dropdown'">
+            <span class="menu-title">User Pages</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-lock menu-icon"></i>
+          </span>
+          <b-collapse id="user-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/auth-pages/login/">Login</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/auth-pages/register/">Register</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'error-page-dropdown'">
+            <span class="menu-title">Error pages</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-security menu-icon"></i>
+          </span>
+          <b-collapse id="error-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/error-pages/error-404/">404</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/error-pages/error-500/">500</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'general-page-dropdown'">
+            <span class="menu-title">General Pages</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-medical-bag menu-icon"></i>
+          </span>
+          <b-collapse id="general-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/blank-page/">Blank Page</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/profile/">Profile</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/faq-1/">FAQ</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/faq-2/">FAQ 2</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/news-grid/">News Grid</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/timeline/">Timeline</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/search-result/">Search Result</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/general-pages/portfolio/">Portfolio</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/notifications/">
+            <span class="menu-title">Notifications</span>
+            <i class="mdi mdi-bell-ring menu-icon"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'form-elements'">
+            <span class="menu-title">Forms</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+          </span>
+          <b-collapse id="form-elements">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/forms/basic-elements/">Basic Elements</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/forms/advanced-elements/">Advanced Elements</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/forms/wizard/">Wizard</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'icons-dropdown'">
+            <span class="menu-title">Icons</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-contacts menu-icon"></i>
+          </span>
+          <b-collapse id="icons-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/icons/flag-icons/">Flag icons</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/icons/fontawesome/">Font Awesome</router-link>
+              </li>
+               <li class="nav-item">
+                <router-link class="nav-link" to="/icons/mdi-icons/">MDI</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/icons/simpleline/">Simple line icons</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/icons/themify-icons/">Themify icons</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'e-commerce-page-dropdown'">
+            <span class="menu-title">E-commerce</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-shopping menu-icon"></i>
+          </span>
+          <b-collapse id="e-commerce-page-dropdown">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/e-commerce/invoice/">Invoice</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/e-commerce/pricing-table/">Pricing Table</router-link>
+              </li>
+            </ul>
+          </b-collapse>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/apps/calendar/">
+            <span class="menu-title">Calendar</span>
+            <i class="mdi mdi-calendar-today menu-icon"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/apps/email/">
+            <span class="menu-title">E-mail</span>
+            <i class="mdi mdi-email menu-icon"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/apps/todo/">
+            <span class="menu-title">To-do</span>
+            <i class="menu-icon mdi mdi-dna"></i>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://www.bootstrapdash.com/demo/purple/vue/documentation/documentation.html">
+            <span class="menu-title">Documentation</span>
+            <i class="menu-icon mdi mdi-file-document-outline"></i>
+          </a>
+        </li>
+        <li class="nav-item sidebar-actions">
+          <span class="nav-link">
+            <div class="border-bottom">
+              <h6 class="font-weight-normal mb-3">Projects</h6>
+            </div>
+            <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
+            <div class="mt-4">
+              <div class="border-bottom">
+                <p class="text-secondary">Categories</p>
+              </div>
+              <ul class="gradient-bullet-list mt-4">
+                <li>Free</li>
+                <li>Pro</li>
+              </ul>
+            </div>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'sidebar',
+  mounted () {
+    const body = document.querySelector('body')
+    // add class 'hover-open' to sidebar navitem while hover in sidebar-icon-only menu
+    document.querySelectorAll('.sidebar .nav-item').forEach(function (el) {
+      el.addEventListener('mouseover', function () {
+        if (body.classList.contains('sidebar-icon-only')) {
+          el.classList.add('hover-open')
+        }
+      })
+      el.addEventListener('mouseout', function () {
+        if (body.classList.contains('sidebar-icon-only')) {
+          el.classList.remove('hover-open')
+        }
+      })
+    })
+  }
+}
+</script>
+                </textarea>
+                <h4 class="pt-4" id="footer">Footer</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+<template>
+  <section class="app-footer">
+    <footer class="footer">
+      <div class="container-fluid clearfix">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©  <a href="http://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a> 2020.</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/vue-admin-templates/" target="_blank"> vue admin templates </a> from BootstrapDash.com</span>
+      </div>
+    </footer>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'app-footer'
+}
+</script>
+                </textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 id="customerSupport" class="mb-4">Customer Support</h3>
+                <p>We will assist you any problem you encounter while buidling your dashboard via Purple Vuejs Admin.</p>
+                <p>Email: <a href="mailto:support@bootstrapdash.com">support@bootstrapdash.com</a> </p>
+                <p>We will respond to you as quickly as we can. Thank you.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/mode/python/python.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

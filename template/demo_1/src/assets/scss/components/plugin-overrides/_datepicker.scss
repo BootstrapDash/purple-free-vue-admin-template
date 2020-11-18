@@ -1,0 +1,197 @@
+.mx-datepicker-main {
+  color: #000000;
+  border: none;
+  .mx-datepicker-body {
+    .mx-calendar {
+      padding: 0;
+    }
+    .mx-calendar-header {
+      background: linear-gradient(to right, #84d9d2, #07cdae);
+      height: initial;
+      line-height: initial;
+      padding: 0.5rem;
+      .mx-btn {
+        color: #ffffff;
+        font-size: 1rem;;
+      }
+      .mx-calendar-header-label {
+        display: inline-block;
+        font-size: 1rem;
+        color: #ffffff;
+        .mx-btn-text {
+          font-size: 1rem;
+          @media (max-width: 1200px) and (min-width: 992px) {
+            font-size: 1.2rem;
+          }
+        }   
+      }
+    }
+    .mx-calendar-content {
+      height: auto;
+      .mx-table {
+        &.mx-table-date {
+          thead {
+            background: linear-gradient(to right, #84d9d2, #07cdae);
+            color: #ffffff;
+            th {
+              font-size: 0.875rem;
+              @media (max-width: 576px) {
+                padding: 1rem 0rem;
+              }
+              @media (max-width: 1200px) and (min-width: 992px) {
+                padding: 1rem 0rem;
+              }
+            }
+          }
+          tbody {
+            .mx-date-row {
+              .cell {
+                font-size: 0.875rem;
+              }
+            }
+          }
+        }
+        &.mx-table-month {
+          padding: 3rem 0rem;
+          @media (max-width: 576px) {
+            padding: 0rem;
+          }
+          .cell {
+            padding: 1rem 2rem;
+            @media (max-width: 576px) {
+              padding: 0rem;
+            }
+            &.active {
+              background: #eee;
+              color: inherit;
+            }
+            &:hover {
+              background: #eee;
+              color: inherit;
+            }
+          }
+        }
+        &.mx-table-year {
+          padding: 3rem 0rem;
+          .cell {
+            padding: 1rem 2rem;
+            @media (max-width: 576px) {
+              padding: 0rem;
+            }
+          }
+        }
+      }
+    }
+  } 
+}
+
+.mx-datepicker {
+  width: 100%;
+  .mx-input-wrapper {
+    .mx-input {
+      height: 50px;
+    }
+  }
+  &.mx-datepicker-inline {
+    .mx-datepicker-main {
+      .mx-datepicker-body {
+        .mx-calendar {
+          width: 100%;
+          .mx-calendar-header {
+            padding: 2rem;
+            @media (max-width: 576px) {
+              padding: 0.5rem;
+            }
+            @media (max-width: 1200px) and (min-width: 992px) {
+              padding: 2rem;
+            }
+            .mx-calendar-header-label {
+              font-size: 2rem;
+              @media (max-width: 576px),
+              (max-width: 1200px) and (min-width: 992px) {
+                font-size: 1rem;
+              }
+              .mx-btn-text {
+                font-size: 2rem;
+                @media (max-width: 576px),
+                (max-width: 1200px) and (min-width: 992px)
+                 {
+                  font-size: 1rem;
+                }
+              }
+            }
+            .mx-btn {
+              font-size: 2rem;
+              @media (max-width: 576px),
+              (max-width: 1200px) and (min-width: 992px) {
+                font-size: 1rem;
+              }
+            }
+            .mx-icon-double-right,
+            .mx-icon-double-left {
+              &::before,
+              &::after {
+                width: 15px;
+                height: 15px;
+                border-width: 4px 0 0 4px;
+                @media (max-width: 576px),
+                (max-width: 1200px) and (min-width: 992px) {
+                  width: 10px;
+                  height: 10px;
+                  border-width: 2px 0 0 2px;
+                }
+              }
+            }
+            .mx-icon-right,
+            .mx-icon-left {
+              &::before {
+                width: 15px;
+                height: 15px;
+                border-width: 4px 0 0 4px;
+                @media (max-width: 576px),
+                (max-width: 1200px) and (min-width: 992px) {
+                  width: 10px;
+                  height: 10px;
+                  border-width: 2px 0 0 2px;
+                }
+              }
+            }
+          }
+          .mx-calendar-content {
+            .mx-table {
+              thead {
+                th {
+                  padding: 1.5rem 0rem;
+                  @media (max-width: 576px)  {
+                    padding: 0rem;
+                  }
+                  @media (max-width: 1200px) and (min-width: 992px) {
+                    padding: 1.5rem 0rem;
+                  }
+                }
+              }
+              &.mx-table-date {
+                tbody {
+                  .cell {
+                    padding: 1.2rem 1rem;
+                    border-radius: 100%;
+                    &.active {
+                      color: #07cdae;
+                      background: transparent;
+                    }
+                    @media (max-width: 576px) {
+                      padding: 0rem;
+                    }
+                    @media (max-width: 1200px) and (min-width: 992px) {
+                      padding: 0.8rem 0.5rem;
+                    }
+                  }
+                }
+              }
+            }       
+          }
+        }
+      }
+    }
+  }
+}
