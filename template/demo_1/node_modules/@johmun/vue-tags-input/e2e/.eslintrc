@@ -1,9 +1,0 @@
-{
-  "env": {
-    "node": true
-  },
-  "globals": {
-    "test": true,
-    "fixture": true
-  }
-}
